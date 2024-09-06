@@ -12,6 +12,12 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    background-image: url('images/battle_bg_image.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    /* Outras propriedades opcionais: */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem rolar mais lentamente que o conteúdo */
 }
 
 /* Estiliza os títulos h1 */
