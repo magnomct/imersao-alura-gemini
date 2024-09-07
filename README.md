@@ -1,4 +1,4 @@
-# Visões de Mundos Futuristas
+# Visões de Mundos Futuristas - Imersão DEV Alura com #Google Gemini
 
 ## Desvendando o Futuro: Um Guia Rápido para o Nosso Projeto
 
