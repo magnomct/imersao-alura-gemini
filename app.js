@@ -5,8 +5,8 @@ function pesquisar() {
     let campoPesquisa = document.getElementById("campo-pesquisa").value
 
     // se o campoPesquisa for uma string sem nada
-    if (campoPesquisa == "") {
-        section.innerHTML = "<h2><span style=\"color:#000000\"><strong>Nada foi encontrado</strong></span></h2>"
+    if (!campoPesquisa) {
+        section.innerHTML = "<h2><span style=\"color:#000000\"><strong>Nada foi encontrado. Você precisa digitar o nome de uma série ou filme futurista</strong></span></h2>"
         return
     }
 
@@ -15,6 +15,7 @@ function pesquisar() {
     let resultados = "";
     let titulo = "";
     let descricao = "";
+    let tags = "";
 
 
     // Itera sobre cada dado na lista de dados
@@ -38,6 +39,10 @@ function pesquisar() {
         `;
         }
     }
+    if (!resultados) {
+        resultados = "<h2><span style=\"color:#000000\"><strong>Nada foi encontrado</strong></span></h2>"
+    }
+
     // Atribui os resultados gerados ao conteúdo da seção
     section.innerHTML = resultados;
 }
